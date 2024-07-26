@@ -26,21 +26,21 @@ body_battle = {
 }
 
 #Создание
-'''response_criaute = requests.post(url=f'{URL}/pokemons', headers=HEADER, json=body_criaute)
+response_criaute = requests.post(url=f'{URL}/pokemons', headers=HEADER, json=body_criaute)
 print(response_criaute.text)
 
 message = response_criaute.json()['message']
 print(message)'''
 
 #Изменение
-'''response_update = requests.put(url=f'{URL}/pokemons', headers=HEADER, json=body_update)
+response_update = requests.put(url=f'{URL}/pokemons', headers=HEADER, json=body_update)
 print(response_update.text)
 
 message = response_update.json()['message']
 print(message)'''
 
 #Ловля покемона
-'''response_add_pokeball = requests.post(url=f'{URL}/trainers/add_pokeball', headers=HEADER, json=body_add_pokeball)
+response_add_pokeball = requests.post(url=f'{URL}/trainers/add_pokeball', headers=HEADER, json=body_add_pokeball)
 print(response_add_pokeball.text)
 
 message = response_add_pokeball.json()['message']
